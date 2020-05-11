@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url("gif1.gif");
+    background-image: url("gif2.gif");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -9,7 +9,7 @@ body {
 h1, p {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
-	color:black;
+	color:rgb(153, 252, 5);
 	font-size:  60px;
 }
 
