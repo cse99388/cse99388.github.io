@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job advertising|application form</title>
+        <style>
+             body{
+               background-color: black;
+                  
+            }
+            div{
+                height: 1150px;
+                width:  800px;
+                background-color:white;
+                top: 20px;
+                border-style: solid;
+                border-color: red;
+                border-width: 5px;
+            }
+            p,h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:26px;
+            }
+        </style>
+    </head>
+    <body>  
+        <div>
+            <center><h1 style="font-size: 32px;">Employment Application</h1></center>
+           <form action="">
+            <h1 style="text-decoration: underline;">Personal Details</h1>
+            <p>
+                <b>Full Name  :</b>
+                <input type="text" name="fullname" placeholder="enter your name"/>
+
+            </p>
+            <p>
+                <b>Gender :</b>
+                <input type="radio" name="rb" value="v1"/>male
+                <input type="radio" name="rb" value="v2"/>female
+
+            </p>
+            <p>
+                <b>Date Of Birth :</b>
+                <input type="date" name="d" value=""/>
+            </p>
+            <p>
+                <b>Address :</b>
+                <textarea name="a" rows="3" cols="35" placeholder="Enter your address"></textarea>
+            </p>
+            <h1 style="text-decoration: underline;">Professional Details</h1>
+
+            <p>
+                <b>Years of experience :</b>
+                <select name="select">
+                    <option value="0">No experience</option>
+                    <option value="1">1 year</option>
+                    <option value="2">2 years</option>
+                    <option value="3">3 years</option>
+                    <option value="4">4 years</option>
+                    <option value="5">5 or more years</option>
+                </select>
+            </p>
+            <p>
+                <b>Name of current  firm/employer/institution :</b>
+                <input type="text" name="pc" />
+
+            </p>
+            <p>
+                <b>Current salary package :</b>
+                <input type="text" name="sp" />
+            </p>
+            <p>
+                <b>Awards and Accolades :</b>
+                <textarea rows="3" cols="35" name="aa"></textarea>
+            </p>
+            <h1 style="text-decoration: underline;">Educational Details</h1>
+            <p>
+                <b>Name of school :</b>
+                <input type="text" name="ns" />
+
+            </p>
+            <p>
+                <b>Name of college :</b>
+                <input type="text" name="nc" />
+
+            </p>
+            <p>
+                <b>Course :</b>
+                <input type="text" name="c" />
+
+            </p>
+            <p>
+                <b>12th Grade Marks :</b>
+                <input type="text" name="plus" />
+
+            </p>
+            <p>
+                <b>Course CGPA :</b>
+                <input type="text" name="cgpa" />
+
+            </p>
+           <center><button type="reset" name="res" onclick="window.alert('Your form will be reset.')" value="Reset" id ="rst">Reset </button></center> 
+             <p>Press the button on the right to apply</p>
+
+           </form>
+         </div>
+         
+        <div style="position:fixed;left: 820px;width:700px;height:800px;background-color: black;border-width: 0px;" >
+       <center><a href="tq.html"> <img src="app.png"  width="200px" height="200px" onclick="window.alert('Your Application form has been submitted.')"></a> </center>  
+        </div>
+    </body>
+
+
+</html>
