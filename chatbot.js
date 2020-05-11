@@ -1,4 +1,5 @@
-var questionNum = 0;													
+var questionNum = 0;	
+var i=0;												
 var question = '<h1>Try saying Hi...</h1>';				 
 
 var output = document.getElementById('output');				
@@ -9,50 +10,55 @@ function bot() {
     if (questionNum == 0) {
       output.innerHTML = '<h1>Hi </h1>';
       document.getElementById("input").value = "";   		
-      question = '<h1>Your name please..</h1>';			    			
-      setTimeout(timedQuestion, 1000);									
+      question = '<h1>You can take up my survey and then you can ask questions to me(press enter to continue)</h1>';		    			
+      setTimeout(timedQuestion, 1000);					
       }
-
-    if (questionNum == 1) {
+     if (questionNum == 1) {
+        output.innerHTML = '<h1>Okay let me start the survey</h1>';
+        document.getElementById("input").value = "";   		
+        question = '<h1>Your name please..</h1>';			    			
+        setTimeout(timedQuestion, 1000);									
+        }
+    if (questionNum == 2) {
     output.innerHTML = '<h1>hello ' + input + '</h1>';
     document.getElementById("input").value = "";   		
     question = '<h1>On a scale of 5,rate your job searching experience on our website</h1>';			    			
     setTimeout(timedQuestion, 1000);									
     }
 
-    else if (questionNum == 2) {
+    else if (questionNum == 3) {
     output.innerHTML = '<h1>Thanks for your ' + (input) + ' star rating</h1>';
     document.getElementById("input").value = "";   
     question = '<h1>Did you find the job you wanted(y/n)?</h1>';					      	
     setTimeout(timedQuestion, 1500);
     }  
-    else if (questionNum == 3) {
+    else if (questionNum == 4) {
         document.getElementById("input").value = "";   
         question = '<h1>Rate your job applying experience on a scale of 5.</h1>';					      	
         setTimeout(timedQuestion, 1000);
         } 
-        else if (questionNum == 4) {
+        else if (questionNum == 5) {
             output.innerHTML = '<h1>Thanks for your ' + (input) + ' star rating</h1>';
             document.getElementById("input").value = "";   
             question = '<h1>Has the job classification made it easy to search jobs(y/n)?</h1>';					      	
             setTimeout(timedQuestion, 1500);
             }   
-      else if (questionNum ==5) {
+      else if (questionNum ==6) {
                 document.getElementById("input").value = "";   
                 question = '<h1>Rate your overall experience in our website on a scale of 5.</h1>';					      	
                 setTimeout(timedQuestion, 1000);  
                }
-               else if (questionNum ==6) {
+               else if (questionNum ==7) {
                 output.innerHTML = '<h1>Thanks for your ' + (input) + ' star rating</h1>';
                 document.getElementById("input").value = "";   
                 question = '<h1>Give your comments(if any) or else type "no" do not leave this blank </h1>';					      	
                 setTimeout(timedQuestion, 1500);
                 }   
-        else if (questionNum == 7) {
-                    output.innerHTML = '<p>Thank you! your response has been submitted.Now you can quit this tab or ask me a question.Try asking "who are you" and please do not use question mark.</p>';
+        else if (questionNum == 8) {
+                    output.innerHTML = '<p>Thank you! your response has been submitted.Now you can ask me a question.Try asking "who are you" and please do not use question mark.</p>';
                     document.getElementById("input").value = "";
         }
-        else if (questionNum == 8) {
+        else if (questionNum == 9) {
           if (input=='what is your name' ||input=='who are you'||input=='what are you')
           output.innerHTML = '<h1>I am forhire chatbot</h1>';
           else if (input=="who is your boss"||input=="whom do you work for"||input=="where are you working"||input=="where are you from"||input=="where do you work")
@@ -76,7 +82,7 @@ function bot() {
          
           setTimeout(timedQuestion, 2500);
 }
-else if (questionNum > 8) {
+else if (questionNum > 9) {
   if (input=='what is your name' ||input=='who are you'||input=='what are you')
   output.innerHTML = '<h1>I am forhire chatbot</h1>';
   else if (input=="who is your boss"||input=="whom do you work for"||input=="where are you working"||input=="where are you from"||input=="where do you work")
@@ -109,7 +115,9 @@ function timedQuestion() {
 
 $(document).keypress(function(e) {
   if (e.which == 13) {
-    bot();																						
+    bot();	
+    
+    																				
     questionNum++;																		
   }
 });
